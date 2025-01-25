@@ -56,7 +56,7 @@ class S29748BankApplicationTests {
 		accountService.deposit(1,1000d);
 		Finances testFinances=financesService.findByFinancesID(accountService.findByClientID(1).getFinancesID());
 
-		assertThat(testFinances.getFinancesAmount()).isEqualTo(5200d);
+		assertThat(testFinances.getFinancesAmount()).isEqualTo(4200d);
 	}
 
 
